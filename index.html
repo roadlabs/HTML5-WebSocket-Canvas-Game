@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src='./scripts/jquery/jquery-1.4.2.min.js'></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/message.js"></script>
+    <script src="./scripts/websocket.js"></script>
+    <script src="./scripts/body.js"></script>
+    <script src="./scripts/util.js"></script>
+    <script src="./scripts/stage.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="main-frame">
+        <div class="game-frame">
+            <div>
+                <canvas id="stage"  width='1050' height='850'></canvas>
+            </div>
+            <div>
+                <span>Input user Id to start the game: </span>
+                <input type="text" value="" id="userId">
+                <input type="button" value="Start Game" onclick="game.login();">
+                <input type="button" value="Stop Game" onclick="game.stop();">
+                <input type="button" value="Continue" onclick="game.start();">
+            </div>
+        </div>
+        <div class="control-frame">
+            <div class="debug-frame">
+                <div id="debug"></div>
+                <div>
+                    <input type="button" value="clear" onclick="cons.clearDebug();">
+                </div>
+            </div>
+            <div class="player-frame">
+                <div id="player"></div>
+            </div>
+            <div class="system-frame">
+                <div id="system"></div>
+                <div>
+                    <input type="button" value="clear" onclick="cons.clearLog();">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="fps"></div>
+</body>
+</html>

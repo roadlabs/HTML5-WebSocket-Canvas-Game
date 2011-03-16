@@ -1,0 +1,47 @@
+.main-frame {
+	height: 900px;
+}
+.game-frame {
+	float: left;
+}
+#stage {
+	border: 1px black solid;
+}
+.control-frame {
+	height: 900px;
+	float: left;
+}
+.debug-frame {
+	height: 240px;
+	margin: 0 0 0 10px;
+}
+#debug {
+	width: 500px;
+	height: 200px;
+	overflow-x: scroll;
+    overflow-y: scroll;
+	border: 1px black solid;
+}
+.player-frame {
+	height: 200px;
+	margin: 0 0 10px 10px;
+}
+#player {
+	width: 500px;
+	height: 200px;
+    border: 1px black solid;
+}
+.system-frame {
+	height: 450px;
+	margin: 0 0 0 10px;
+}
+#system {
+	width: 500px;
+	height: 400px;
+    overflow-x: scroll;
+	overflow-y: scroll;
+	border: 1px black solid;
+}
+.clear {
+	clear: all;
+}
